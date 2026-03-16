@@ -67,7 +67,7 @@ class ParcelsSummary(Base):
 class ParcelsSummaryMonthly(Base):
     __tablename__ = "parcels_summary_monthly"
 
-    yyyymm = Column(String, primary_key=True)
+    yyyymm = Column(String)
     product_name = Column(String)
     parcel_count = Column(Integer)
     region = Column(String)
